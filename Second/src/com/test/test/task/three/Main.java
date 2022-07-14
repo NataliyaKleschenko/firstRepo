@@ -44,9 +44,9 @@ public class Main {
         final double hypotenuse = Double.parseDouble(scanner.next());
         Triangle triangle = new Triangle(base,leg,hypotenuse);
         final double trigSqr = triangle.getSquare();
-        System.out.println("Area of the triangle: " + trigSqr);
+        System.out.printf("Area of the triangle: %.2f\n",trigSqr);
         final double trigPer = triangle.getPerimeter();
-        System.out.println("Perimeter of the triangle: " + trigPer);
+        System.out.printf("Perimeter of the triangle: %.2f\n",trigPer);
     }
 
     private static void rectangleCalculator() {
@@ -58,9 +58,9 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(side1, side2);
         final double rectSqr = rectangle.getSquare();
-        System.out.println("Area of the rectangle: " + rectSqr);
+        System.out.printf("Area of the rectangle: %.2f\n",rectSqr);
         final double rectPer = rectangle.getPerimeter();
-        System.out.println("Perimeter of the rectangle: " + rectPer);
+        System.out.printf("Perimeter of the rectangle: %.2f\n",rectPer);
     }
 
     private static void circleCalculator() {
@@ -72,7 +72,7 @@ public class Main {
         Circle circle = new Circle(value);
         final double circleSqr = circle.getSquare();
         final double circlePerm = circle.getPerimeter();
-        System.out.println("Area of the circle: " + circleSqr);
-        System.out.println("Circle perimeter: " + circlePerm);
+        System.out.printf("Area of the circle: %.2f\n",circleSqr);
+        System.out.printf("Circle perimeter: %.2f\n",circlePerm);
     }
 }
